@@ -9,6 +9,7 @@ import React from "react";
 import Welcome  from "./components/welcome.tsx"
 import NewUserPage from "./components/newuser.tsx";
 import SelectTypeOfUser from "./components/selecttypeofuser.tsx";
+
 function App() {
 
 const navigate = useNavigate()
@@ -40,6 +41,30 @@ setUsername(data.username)
 // button animation
 
 
+function App() {
+ React.useEffect(() => {
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      const elements = document.querySelectorAll<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>(
+        "input, textarea, select"
+      );
+
+      elements.forEach(el => {
+        el.addEventListener("blur", () => {
+          setTimeout(() => {
+            // Force zoom-out
+            document.body.style.transform = "scale(1)";
+            document.body.style.transformOrigin = "0 0";
+
+            // Keep scroll position stable
+            window.scrollTo(0, window.scrollY);
+          }, 100);
+        });
+      });
+    }
+}, []);
+}
 
 
 
