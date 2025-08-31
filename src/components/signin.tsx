@@ -67,7 +67,7 @@ export default function signin ({signInSubmitt }: SignupProps){
                     <div className="terms">
                 <div className="forcheckbox">
                         <input type="checkbox" name="" id="" />
-                       <label htmlFor="" className="forterms"> I accept the terms and condsirion
+                       <label htmlFor="" className="forterms"> I accept the terms and conditions
                     </label>
                    
                 </div>

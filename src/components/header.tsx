@@ -1,8 +1,9 @@
 import {  useNavigate, Link } from "react-router-dom"
 
 import image from "../assets/roundpicture.svg"
-import menu from "../assets/icons8-menu.svg"
+import HamburgerMenu from "./hamburger"
 export default function Heading () {
+
 
   const navigate = useNavigate()
     return(
@@ -20,20 +21,8 @@ export default function Heading () {
                       <li>Employees</li>
                       
             </ul>
-           
-           <div className="second" style={{display:"none"}}>
-      <Link to="/signin" className="link">Sign In</Link> 
-            <button className="btn-1" 
-            onClick={() => {
-             setTimeout(() =>  navigate("/sigunup"), 1500);
-            }}
-            >
-                
-                Sign Up</button>
-            <button className="buttos"> <img src={menu} alt="menusvg" />
-            </button>
-           </div>
-        </div>
+            <HamburgerMenu/>
+     </div>
         </header>
     )
 }

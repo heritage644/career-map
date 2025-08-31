@@ -8,7 +8,7 @@ import Signin from "./components/signin.tsx";
 import React from "react";
 import Welcome  from "./components/welcome.tsx"
 import NewUserPage from "./components/newuser.tsx";
-import SelectTypeOfUser from "./components/selecttypeofuser.tsx";
+import SelectTypeOfUser from "./components/select-type-of-user.tsx";
 
 function App() {
 
@@ -94,7 +94,7 @@ function App() {
         <Route path="/" element= {<Signin signInSubmitt ={handleSignInSubmit} />}/>
          <Route path="/welcome" element= {<Welcome userName={userName} />}/>
            <Route path="/newuser" element= {<NewUserPage  />}/>
-            <Route path="/selecttypeofuser" element= {<SelectTypeOfUser />}/>
+            <Route path="-select-type-of-user" element= {<SelectTypeOfUser />}/>
       </Routes>
     </div>
     
