@@ -94,7 +94,7 @@ function App() {
         <Route path="/" element= {<Signin signInSubmitt ={handleSignInSubmit} />}/>
          <Route path="/welcome" element= {<Welcome userName={userName} />}/>
            <Route path="/newuser" element= {<NewUserPage  />}/>
-            <Route path="-select-type-of-user" element= {<SelectTypeOfUser />}/>
+            <Route path="/select-type-of-user" element= {<SelectTypeOfUser />}/>
       </Routes>
     </div>
     
@@ -103,6 +103,4 @@ function App() {
 
 export default App;
 
-function createBubbles() {
-  throw new Error("Function not implemented.");
-}
+

@@ -24,7 +24,7 @@ export default function afterCountries (){
                 <br />    invites and job offers that align with your
                 <br /> unique 
                     skills <br />
-                    <p style={{paddingTop: "20px"}}>don’t miss out on your dream job-get started  today  <br />  and make your profile stand out.</p>
+                    <p style={{paddingTop: "20px"}}>don't miss out on your dream job-get started  today  <br />  and make your profile stand out.</p>
 
 
                 </p>

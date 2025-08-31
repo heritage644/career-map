@@ -6,9 +6,7 @@
 }
 
 
-img{
-  max-width: 100%;
-}
+
 html, body {
     font-family:"Archivo", sans-serif ;
     background-color:#06090D ;
@@ -3178,7 +3176,7 @@ padding: 30px 20px 30px 20px ;
 line-height: 1;
 }
 .section-head:hover {
-  transform: scale(1.1);
+  transform: scale(1.03);
   cursor: pointer;
     box-shadow: -5px 4px  8px   rgba(0,0,0,0.4);
 

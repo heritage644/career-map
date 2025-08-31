@@ -79,7 +79,7 @@ export default function signin ({signInSubmitt }: SignupProps){
                    <div className="admin-accessed">
                 <p>Not yet a user?  {""}
                     
-                    <Link to="/selecttypeofuser">Sign up</Link> </p>
+                    <Link to="/select-type-of-user">Sign up</Link> </p>
                 <div>
 
   <p >
